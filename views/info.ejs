@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="stylesheet" href='/index.css'>
+</head>
+<body>
+    <div class = "main">
+        <h1>Account Information: </h1>
+        <h5>Note: All information shown here will not be shown ever again! so write it down somewhere</h5>
+        <div class = "box">
+            <p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td><%= currName %></td>
+                        </tr>
+                        <tr>
+                            <td>Consumer ID</td>
+                            <td><%= currConsumerId %></td>
+                        </tr>
+                        <tr>
+                            <td>Account Number</td>
+                            <td><%= currAccountNo %></td>
+                        </tr>
+                        <tr>
+                            <td>PIN</td>
+                            <td><%= currPIN %></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </p>
+            <a href="/home">Home</a>
+        </div>
+    </div>
+</body>
+</html>

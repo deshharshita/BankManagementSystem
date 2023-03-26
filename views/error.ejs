@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class = "main">
+        <div class = "header">Error</div>
+        <div class = "box">
+            <p> <%= error %></p>
+            <a href="/home"><button>Home</button></a>
+        </div>
+        <p style = "font-size: 15px;">This page will timeout in 10.0 seconds</p>
+    </div>
+</body>
+<script>
+    setTimeout(()=>{
+        window.location.href = '/home'
+    },10000)
+</script>
+</html>

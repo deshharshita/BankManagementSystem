@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class = "main">
+        <h1>Transaction</h1>
+        <h5>Account No. <%= accountno %></h5>
+
+        <div class = "box">
+            <form method="POST">
+                <input type="text" name="method" id="method" hidden value = "NULL">
+                <input type = "number" name= "amount" id="amount" placeholder = "amount">
+                <button id = "CREDIT" type = "submit">CREDIT</button>
+                <button id = "DEBIT" type = "submit">DEBIT</button>
+                <input type="number" name="destination" id="destination" value = 0>
+                <button id = "TRANSFER" type = "submit">TRANSFER</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+    let credit = document.getElementById('CREDIT');
+    let debit = document.getElementById('DEBIT');
+    let transfer = document.getElementById('TRANSFER');
+    credit.addEventListener('click', ()=>{
+        document.getElementById('method').value = "CREDIT";
+    });
+
+    debit.addEventListener('click', ()=>{
+        document.getElementById('method').value = 'DEBIT';
+    })
+    transfer.addEventListener('click', ()=>{
+        document.getElementById('method').value = 'TRANSFER';
+    })
+</script>
+</html>

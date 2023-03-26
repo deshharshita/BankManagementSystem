@@ -1,0 +1,164 @@
+html,body{
+    font-size:30px;
+    background: #EEF4D4;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Layout */
+.main{
+    width:100vw;
+    height: 80vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* Heading */
+.header{
+    margin:50px 20px;
+    color: white;
+    padding:20px 10vw;   
+    background-color: #78C0E0;
+    border-radius: 20px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* Footer */
+.footer{
+    position: fixed;
+    bottom: 5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 97.3%;
+    margin:10px;
+    padding:7px;
+    border-radius: 20px;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06);
+}
+
+table,th,  td{
+    scroll-behavior: auto;
+    padding:10px;
+    color:black;
+    font-size: 25px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+/* Content Container */
+.box{
+    padding: 10px;
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #EF476F;
+    border-radius:20px;
+    color:white;
+    text-align: center;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+    ;  
+}
+.box a{
+    width: 100%;
+}
+.box button{
+    box-shadow:
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+    
+    width: 80%;
+    padding:20px;
+    margin:20px;
+    cursor: pointer;
+    background: #D36135;
+    border: 2px solid white;
+    border-radius: 20px;
+    color:white;
+}
+.box button:hover{
+    color: black;
+    background: wheat;
+}
+
+input{
+    width:80%;
+    border:none;
+    border-radius: 10px;
+    margin: 3px;
+    padding:10px;
+}
+input:hover{
+    background-color: antiquewhite;
+}
+
+.radio{
+    outline: none;
+    margin:10px;
+}
+
+.label{
+    color:white;
+}
+
+/* SIGNUP BUTTON (for both index.html and signup.html) */
+#signup{
+    color:#D36135;
+    background: white;
+    border: 2px solid #D36135;
+}
+#signup:hover{
+    color:white;
+    background: black;
+}
+
+
+/* Portrait */
+@media only screen and (max-device-width: 500px){
+    body{
+        font-size:20px;
+    }
+    button{
+        width: 80%;
+    }
+    .box{
+        width:80%;
+    }
+    .label{
+        font-size:10px;
+    }
+    .footer{
+        margin-top:40px;
+        width:80%;
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 499px){
+    button{
+        width:30%;
+    }
+    .box{
+        height:90vh;
+        width:50%;
+    }
+    .label{
+        font-size:15px;
+    }
+}

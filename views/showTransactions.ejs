@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class ="main" style = "overflow-y: auto; height: 100vh">
+        <div class = "header">Transaction History</div>
+            <table>
+                <tr>
+                    <th>Transaction ID</th>
+                    <th>Source Account</th>
+                    <th>Type of Transaction</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Destination Account (0 if no inter-transaction)</th>
+                </tr>
+                <%  for(i = 0; i< data.length; i++){ %>
+                        <tr>
+                            <td><%= data[i].transactionid %></td>
+                            <td><%= data[i].sourceaccount %></td>
+                            <td><%= data[i].type %></td>
+                            <td><%= data[i].date %></td>
+                            <td><%= data[i].amount %></td>
+                            <td><%= data[i].destination %></td>
+                        </tr>
+                <% } %>
+            </table>
+    </div>
+</body>
+</html>
